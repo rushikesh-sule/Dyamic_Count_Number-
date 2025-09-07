@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyamic Count</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #parent{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        columns: 10px;
+    }
+    button{
+       
+        
+        width: 80px;
+        height: 50px;
+        border: none;
+        background-color: aliceblue;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 5px black ;
+    }
+   
+</style>
+<body>
+    <div id="parent">
+    <h2>Count : <samp id="counter">0</samp></h2>
+     <div id="chid">
+    <button onclick="increment()">increment</button>
+    <button onclick="decrement()">decrement</button>
+    <button onclick="reset()">reset</button>
+    </div>
+    </div>
+
+    <script src="./DyamicCount.js"></script>
+</body>
+</html>
+<!--
+Q2) Dynamic Counter with Increment and Decrement Buttons 
+A counter application where users can increment, decrement, or reset the count. 
+   - create functions for increament(), decrement() and reset(). 
+  - perform the operation on button click.
+-->
